@@ -270,7 +270,7 @@ class ViewController: UIViewController, GCDAsyncSocketDelegate, UITextFieldDeleg
     //HTTP请求里包括些什么内容？HTTP响应里包括些什么内容？
     //https://blog.csdn.net/a382064640/article/details/21317647
     //若socket模拟http请求
-    /*
+    /*                                    （好像http协议端口80才能请求到，https端口443的请求不到，发送后直接断开）
     //① eg 手机app当作socket客户端连接到百度（www.baidu.com  80）后发送请求（GET / HTTP/1.1\r\nHost:www.baidu.com\r\nConnection:close\r\n\r\n），（最后Connection:close所以收到响应后马上断开？也可以keep-alive）有转义字符所以文本框输入的时候要站换的
     //      收到的请求响应为（HTTP/1.1 200 OK
                         Accept-Ranges: bytes
