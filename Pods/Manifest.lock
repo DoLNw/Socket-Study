@@ -1,0 +1,16 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs:
+    - CocoaAsyncSocket
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+
+PODFILE CHECKSUM: 1c967fe18f468f9102d6d3f86c3e38e56d11d3a9
+
+COCOAPODS: 1.5.3
