@@ -167,6 +167,8 @@ class TCPClientViewController: UIViewController, GCDAsyncSocketDelegate, UITextF
         
         receiveInfo += receiveStr
         
+        print(receiveInfo)
+        
         clientSocket.readData(withTimeout: -1, tag: 0)
     }
     
