@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pc3-ut-0Ij">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pc3-ut-0Ij">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,6 +69,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zxI-1Q-pFm">
+                                <rect key="frame" x="15" y="168" width="345" height="210"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GUX-9O-LdB">
                                 <rect key="frame" x="345" y="42" width="307" height="79"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,6 +87,8 @@
                             <constraint firstItem="GUX-9O-LdB" firstAttribute="leading" secondItem="ZdS-cY-DWA" secondAttribute="trailing" constant="20" id="7vc-mQ-mzT"/>
                             <constraint firstAttribute="trailing" secondItem="fBo-E0-8fP" secondAttribute="trailing" constant="15" id="CUc-Dg-6yg"/>
                             <constraint firstItem="Ulc-ce-j9P" firstAttribute="height" secondItem="fBo-E0-8fP" secondAttribute="height" id="Gxu-yu-PvV"/>
+                            <constraint firstItem="zxI-1Q-pFm" firstAttribute="leading" secondItem="fBo-E0-8fP" secondAttribute="leading" id="JVU-Ut-Www"/>
+                            <constraint firstItem="zxI-1Q-pFm" firstAttribute="top" secondItem="fBo-E0-8fP" secondAttribute="top" id="JuV-Af-VBZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ulc-ce-j9P" secondAttribute="bottom" constant="15" id="Ka0-t1-86C"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GUX-9O-LdB" secondAttribute="trailing" constant="15" id="NMz-fN-7VQ"/>
                             <constraint firstItem="Ih1-Kp-SU1" firstAttribute="leading" secondItem="bRQ-OE-Ls7" secondAttribute="trailing" constant="56" id="NV9-hG-9e6"/>
@@ -91,12 +99,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ulc-ce-j9P" secondAttribute="trailing" constant="15" id="U5Q-aN-or3"/>
                             <constraint firstItem="Ulc-ce-j9P" firstAttribute="top" secondItem="fBo-E0-8fP" secondAttribute="bottom" constant="15" id="Vb3-rZ-Urv"/>
                             <constraint firstItem="fBo-E0-8fP" firstAttribute="top" secondItem="GUX-9O-LdB" secondAttribute="bottom" constant="15" id="Yq2-q9-wko"/>
+                            <constraint firstItem="fBo-E0-8fP" firstAttribute="bottom" secondItem="zxI-1Q-pFm" secondAttribute="bottom" id="Zp7-eS-3hg"/>
                             <constraint firstItem="mBc-4G-FPs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="aUn-Ej-8s8"/>
                             <constraint firstItem="bRQ-OE-Ls7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="blw-r1-pMu"/>
                             <constraint firstItem="ZdS-cY-DWA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="dOY-vf-9MD"/>
                             <constraint firstItem="ZdS-cY-DWA" firstAttribute="leading" secondItem="mBc-4G-FPs" secondAttribute="trailing" constant="40" id="fYJ-y0-dtn"/>
                             <constraint firstItem="bRQ-OE-Ls7" firstAttribute="top" secondItem="mBc-4G-FPs" secondAttribute="bottom" constant="10" id="kCR-zT-phk"/>
                             <constraint firstItem="mBc-4G-FPs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="t02-gm-tAe"/>
+                            <constraint firstItem="fBo-E0-8fP" firstAttribute="trailing" secondItem="zxI-1Q-pFm" secondAttribute="trailing" id="vbw-rq-27b"/>
                             <constraint firstItem="fBo-E0-8fP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="wj7-T7-dRe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -115,6 +125,7 @@
                         <outlet property="receivedStr" destination="fBo-E0-8fP" id="4s1-TI-eoS"/>
                         <outlet property="sendBtn" destination="Ih1-Kp-SU1" id="vdg-bM-hl3"/>
                         <outlet property="sendField" destination="bRQ-OE-Ls7" id="xKg-Vo-fT3"/>
+                        <outlet property="userfulInfo" destination="zxI-1Q-pFm" id="6UN-bt-QTv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
